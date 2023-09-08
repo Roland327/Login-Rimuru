@@ -1,0 +1,91 @@
+:root {
+    background-image: url("./img/fondoRimuru.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    --green: #45d8b4;
+    --dark-text: rgba(12, 42, 42);
+    --text: #fff;
+    
+  }
+  
+  ::-webkit-scrollbar{
+    width: 0em;
+}
+
+  html,
+  body {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    color: var(--text);
+    background: var(--background);
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  
+  .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.752);
+  
+    h1 {
+      margin-bottom: 30px;
+    }
+  
+    &__container {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    hr {
+      margin: 30px 0;
+    }
+  
+    mat-form-field {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .mdc-button {
+      width: 100%;
+    }
+  
+    .small-text {
+      font-size: 14px;
+      display: block;
+      text-align: center;
+  
+      &.providers {
+        margin-bottom: 30px;
+      }
+  
+      &.log-in-redirect {
+        margin-top: 30px;
+  
+        a {
+          color: var(--green);
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .mat-toolbar.mat-accent {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 0px;
+    border: 1px solid rgba(255,255,255,0.18);
+    --mat-toolbar-container-text-color: #4E6BA5;
+    font-size: 4vw;
+    font-weight: bold;
+}
